@@ -18,7 +18,7 @@ mlsjunkgenv(n = 10, w = w, x = x, y = y, z = z)
 mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 8)
 
 ## ----mlsjunkgend 2-------------------------------------------------------
-mlsjunkgend(n = 10, w = w, x = x, y = y, z = z, round = 8)
+mlsjunkgend(n = 10, w = w, x = x, y = y, z = z)
 
 ## ----mlsjunkgenm---------------------------------------------------------
 mlsjunkgenm(nrow = 5, ncol = 5, w = w, x = x, y = y, z = z, round = 3)

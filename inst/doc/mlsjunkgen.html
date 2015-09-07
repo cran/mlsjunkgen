@@ -10,9 +10,9 @@
 
 <meta name="author" content="Steve Myles" />
 
-<meta name="date" content="2015-08-16" />
+<meta name="date" content="2015-09-07" />
 
-<title>Vignette Title</title>
+<title>mlsjunkgen</title>
 
 
 
@@ -52,15 +52,15 @@ code > span.er { color: #ff0000; font-weight: bold; }
 
 
 <div id="header">
-<h1 class="title">Vignette Title</h1>
+<h1 class="title">mlsjunkgen</h1>
 <h4 class="author"><em>Steve Myles</em></h4>
-<h4 class="date"><em>2015-08-16</em></h4>
+<h4 class="date"><em>2015-09-07</em></h4>
 </div>
 
 
 <div id="background" class="section level3">
 <h3>Background</h3>
-<p>I took a course in graduate school (“<a href="http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000">Statistical Analysis for Digital Simulation</a>”) at <a href="http://www.ttu.edu/">Texas Tech</a> from Dr. Elliot Montes where we spent a lot of time on the generation and analysis of random numbers. Here is a simple-yet-powerful pseudo-random number generator that I learned about in that course. It is named “The MLS Junk Generator”&quot; after <a href="http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith">Dr. Milton L. Smith</a>.</p>
+<p>I took a course in graduate school (“<a href="http://www.depts.ttu.edu/officialpublications/courses/ie.php#ie_5000">Statistical Analysis for Digital Simulation</a>”) at <a href="http://www.ttu.edu/">Texas Tech</a> from Dr. Elliot Montes in which we spent a lot of time on the generation and analysis of random numbers. Here is a simple-yet-powerful pseudo-random number generator that I learned about in that course. It is named “The MLS Junk Generator”&quot; after <a href="http://www.depts.ttu.edu/ieweb/faculty/faculty.php?name=Milton%20Smith">Dr. Milton L. Smith</a>.</p>
 <p>I have also released <a href="https://github.com/scumdogsteev/mls-junk-generator">an Excel/VBA implementation</a> and provided <a href="https://github.com/scumdogsteev/mls-junk-generatR">the simple R code</a> used as the basis for this package.</p>
 <div id="algorithm" class="section level4">
 <h4>Algorithm</h4>
@@ -117,20 +117,20 @@ z &lt;-<span class="st"> </span><span class="dv">4</span>
 ## 8  0.1143156
 ## 9  0.3352500
 ## 10 0.7027079</code></pre>
-<p>The same expample with default rounding:</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mlsjunkgend</span>(<span class="dt">n =</span> <span class="dv">10</span>, <span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z, <span class="dt">round =</span> <span class="dv">8</span>)</code></pre>
-<pre><code>##           RN
-## 1  0.9551644
-## 2  0.6690774
-## 3  0.2123540
-## 4  0.3448801
-## 5  0.1199463
-## 6  0.5639798
-## 7  0.5923515
-## 8  0.1143156
-## 9  0.3352500
-## 10 0.7027079</code></pre>
-<p><strong><code>mlsjunkgenm</code></strong> generates a matrix of user-specified size containing a stream of random numbers based on four user-specified seeds:</p>
+<p>The same example with default rounding:</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mlsjunkgend</span>(<span class="dt">n =</span> <span class="dv">10</span>, <span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z)</code></pre>
+<pre><code>##         RN
+## 1  0.95516
+## 2  0.66908
+## 3  0.21235
+## 4  0.34488
+## 5  0.11995
+## 6  0.56398
+## 7  0.59235
+## 8  0.11432
+## 9  0.33525
+## 10 0.70271</code></pre>
+<p><strong><code>mlsjunkgenm</code></strong> generates a matrix of user-specified size containing a stream of pseudo-random numbers based on four user-specified seeds:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mlsjunkgenm</span>(<span class="dt">nrow =</span> <span class="dv">5</span>, <span class="dt">ncol =</span> <span class="dv">5</span>, <span class="dt">w =</span> w, <span class="dt">x =</span> x, <span class="dt">y =</span> y, <span class="dt">z =</span> z, <span class="dt">round =</span> <span class="dv">3</span>)</code></pre>
 <pre><code>##       [,1]  [,2]  [,3]  [,4]  [,5]
 ## [1,] 0.955 0.564 0.418 0.052 0.020
